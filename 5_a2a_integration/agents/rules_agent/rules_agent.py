@@ -3,6 +3,11 @@ import chromadb
 from strands import Agent, tool
 from strands.multiagent.a2a import A2AServer
 
+from strands.telemetry import StrandsTelemetry
+
+strands_telemetry = StrandsTelemetry()
+strands_telemetry.setup_otlp_exporter()
+strands_telemetry.setup_meter(enable_otlp_exporter=True)
 
 class RulesKnowledgeBase:
     """Fast knowledge base interface"""
