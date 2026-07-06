@@ -78,6 +78,8 @@ agent = Agent(
     # - model: Optional
     # - tools: List containing the query_dnd_rules tool
     # - name: "Rules Agent"
+    tools=[query_dnd_rules],
+    name= "Rules Agent",
     description= DESCRIPTION,
     system_prompt= SYSTEM_PROMPT
 )
@@ -89,4 +91,8 @@ a2a_server = None
 
 if __name__ == "__main__":
     # TODO: Start the A2A server
-    pass
+    a2a_server = A2AServer(
+        agent=agent,
+        port=8000
+    )
+    a2a_server.serve()
