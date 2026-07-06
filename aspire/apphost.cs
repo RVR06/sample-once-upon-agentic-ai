@@ -66,6 +66,7 @@ builder.AddContainer("structurizr", "structurizr/lite:2025.11.08")
     {
         url.DisplayText = "C4 model";
     })
-    .WithBindMount("../archi", "/usr/local/structurizr");
+    .WithBindMount("../archi", "/usr/local/structurizr")
+    .WithLifetime(ContainerLifetime.Persistent);
 
 builder.Build().Run();
