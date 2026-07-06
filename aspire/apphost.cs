@@ -47,4 +47,12 @@ builder.AddPythonApp("gamemaster-orchestrator", "../5_a2a_integration/agents/gam
 
 builder.AddExternalService("character-ui", "https://aws-samples.github.io/sample-once-upon-agentic-ai/");
 
+builder.AddContainer("structurizr", "structurizr/lite:2025.11.08")
+    .WithHttpEndpoint(8500, 8080)
+    .WithUrlForEndpoint("http", url =>
+    {
+        url.DisplayText = "C4 model";
+    })
+    .WithBindMount("../archi", "/usr/local/structurizr");
+
 builder.Build().Run();

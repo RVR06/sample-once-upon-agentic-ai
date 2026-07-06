@@ -1,0 +1,61 @@
+{
+  "configuration" : { },
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2026-07-06T16:39:54Z",
+  "model" : {
+    "people" : [ {
+      "description" : "RVR",
+      "id" : "1",
+      "name" : "RVR",
+      "properties" : {
+        "structurizr.dsl.identifier" : "rvr"
+      },
+      "tags" : "Element,Person"
+    } ]
+  },
+  "name" : "DnD",
+  "properties" : {
+    "structurizr.inspection.info" : "0",
+    "structurizr.inspection.ignore" : "0",
+    "structurizr.inspection.error" : "4",
+    "structurizr.inspection.warning" : "0",
+    "structurizr.dsl" : "d29ya3NwYWNlICJEbkQiICIiIHsKCSFpZGVudGlmaWVycyBoaWVyYXJjaGljYWwKCSFpbXBsaWVkUmVsYXRpb25zaGlwcyBmYWxzZQoJCgltb2RlbCB7CgkJcnZyID0gcGVyc29uICJSVlIiICJSVlIiCgl9Cgl2aWV3cyB7CgkJdGhlbWUgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3J2cjA2L2Nvcm5pZmVyLWNvbnRyaWIvbWFpbi90aGVtZXMvdG9wb2xvZ3kvdGhlbWUuanNvbgoJCXRoZW1lIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9ydnIwNi9jb3JuaWZlci1jb250cmliL21haW4vdGhlbWVzL2hlcmFsZHJ5Mi90aGVtZS5qc29uCgl9Cn0="
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "SystemLandscape-001",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : { },
+      "terminology" : { },
+      "themes" : [ "https://raw.githubusercontent.com/rvr06/cornifer-contrib/main/themes/topology/theme.json", "https://raw.githubusercontent.com/rvr06/cornifer-contrib/main/themes/heraldry2/theme.json" ]
+    },
+    "systemLandscapeViews" : [ {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 800,
+        "width" : 864
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 232,
+        "y" : 160
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemLandscape-001",
+      "name" : "System Landscape View",
+      "order" : 1
+    } ]
+  }
+}
