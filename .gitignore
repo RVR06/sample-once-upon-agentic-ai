@@ -215,3 +215,5 @@ dnd_knowledge_base/
 
 # structurizr
 **/.structurizr/
+
+**/characters.json
