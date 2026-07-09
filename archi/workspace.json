@@ -1,0 +1,449 @@
+{
+  "configuration" : { },
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2026-07-06T18:35:41Z",
+  "model" : {
+    "deploymentNodes" : [ {
+      "children" : [ {
+        "children" : [ {
+          "containerInstances" : [ {
+            "containerId" : "9",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "local",
+            "id" : "19",
+            "instanceId" : 1,
+            "properties" : {
+              "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.5f81b2d4-063c-4903-b96c-0adde80cd522.5044a51b-04ad-47f9-92d3-dc588c02c39a"
+            },
+            "relationships" : [ {
+              "description" : "tracks heroic destinies",
+              "destinationId" : "21",
+              "id" : "22",
+              "linkedRelationshipId" : "12",
+              "sourceId" : "19",
+              "technology" : "a2a"
+            }, {
+              "description" : "queries for ancient rule wisdom",
+              "destinationId" : "24",
+              "id" : "25",
+              "linkedRelationshipId" : "11",
+              "sourceId" : "19",
+              "technology" : "a2a"
+            }, {
+              "description" : "tempts fate",
+              "destinationId" : "27",
+              "id" : "28",
+              "linkedRelationshipId" : "10",
+              "sourceId" : "19",
+              "technology" : "mcp"
+            } ],
+            "tags" : "Container Instance,#strands"
+          } ],
+          "environment" : "local",
+          "id" : "18",
+          "instances" : "1",
+          "name" : "game_master",
+          "properties" : {
+            "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.5f81b2d4-063c-4903-b96c-0adde80cd522"
+          },
+          "tags" : "Element,Deployment Node,#fastapi",
+          "technology" : "FastApi"
+        }, {
+          "containerInstances" : [ {
+            "containerId" : "7",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "local",
+            "id" : "21",
+            "instanceId" : 1,
+            "properties" : {
+              "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.bca60739-bf2b-48cb-8858-3ee6a09da4a0.f61e4f67-5952-4a53-ab53-071274907570"
+            },
+            "tags" : "Container Instance,#strands"
+          } ],
+          "environment" : "local",
+          "id" : "20",
+          "instances" : "1",
+          "name" : "character_chronicler",
+          "properties" : {
+            "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.bca60739-bf2b-48cb-8858-3ee6a09da4a0"
+          },
+          "tags" : "Element,Deployment Node,#strands",
+          "technology" : "A2AServer"
+        }, {
+          "containerInstances" : [ {
+            "containerId" : "4",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "local",
+            "id" : "24",
+            "instanceId" : 1,
+            "properties" : {
+              "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.94fbbe85-15b2-4d0f-8d36-a7db8139e7a6.df56e24d-1e8d-4f75-8b05-84cc9a80eeba"
+            },
+            "tags" : "Container Instance,#strands"
+          } ],
+          "environment" : "local",
+          "id" : "23",
+          "instances" : "1",
+          "name" : "sage_of_rules",
+          "properties" : {
+            "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.94fbbe85-15b2-4d0f-8d36-a7db8139e7a6"
+          },
+          "tags" : "Element,Deployment Node,#strands",
+          "technology" : "A2AServer"
+        }, {
+          "containerInstances" : [ {
+            "containerId" : "2",
+            "deploymentGroups" : [ "Default" ],
+            "environment" : "local",
+            "id" : "27",
+            "instanceId" : 1,
+            "properties" : {
+              "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.db2abc38-4b5c-4ba7-ba0a-45b2761d155b.a6db9669-7377-4e7c-95d5-48b90daff51d"
+            },
+            "tags" : "Container Instance,#strands"
+          } ],
+          "environment" : "local",
+          "id" : "26",
+          "instances" : "1",
+          "name" : "dice_roller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683.db2abc38-4b5c-4ba7-ba0a-45b2761d155b"
+          },
+          "tags" : "Element,Deployment Node,#strands",
+          "technology" : "FastMCP"
+        } ],
+        "environment" : "local",
+        "id" : "17",
+        "instances" : "1",
+        "name" : "orchestration",
+        "properties" : {
+          "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4.2f1b4052-b465-4433-b97c-004d258d5683"
+        },
+        "tags" : "Element,Deployment Node,#aspire",
+        "technology" : "Aspire"
+      } ],
+      "environment" : "local",
+      "id" : "16",
+      "instances" : "1",
+      "name" : "Local Machine",
+      "properties" : {
+        "structurizr.dsl.identifier" : "local_.054b0b81-0557-411e-8c29-18ad98a09fc4"
+      },
+      "tags" : "Element,Deployment Node,#windows",
+      "technology" : "Windows 11"
+    } ],
+    "people" : [ {
+      "description" : "An innocent traveler on a quest for glory",
+      "id" : "13",
+      "name" : "The Heroe",
+      "properties" : {
+        "structurizr.dsl.identifier" : "player"
+      },
+      "relationships" : [ {
+        "description" : "wanders",
+        "destinationId" : "1",
+        "id" : "14",
+        "sourceId" : "13",
+        "tags" : "Relationship"
+      }, {
+        "description" : "obeys",
+        "destinationId" : "9",
+        "id" : "15",
+        "sourceId" : "13",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "description" : "Determines outcomes of actions",
+        "documentation" : { },
+        "group" : "destiny",
+        "id" : "2",
+        "name" : "The Dice Roller",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dnd.dice_roller"
+        },
+        "tags" : "Element,Container,#agent,#strands,#dice",
+        "technology" : "Strands Agents"
+      }, {
+        "description" : "Enchanted repository containing all the wisdom of the realms",
+        "documentation" : { },
+        "group" : "wisdom",
+        "id" : "3",
+        "name" : "The Sacred Chamber",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dnd.sacred_chamber"
+        },
+        "tags" : "Element,Container,#file,#chamber",
+        "technology" : "SQLite"
+      }, {
+        "description" : "Guards D&D lore & mechanics",
+        "documentation" : { },
+        "group" : "wisdom",
+        "id" : "4",
+        "name" : "The Sage of Rules",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dnd.sage_of_rules"
+        },
+        "relationships" : [ {
+          "description" : "consults",
+          "destinationId" : "3",
+          "id" : "5",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,#agent,#strands,#sage",
+        "technology" : "Strands Agents"
+      }, {
+        "description" : "Because heroes deserve to be remembered",
+        "documentation" : { },
+        "group" : "adventure",
+        "id" : "6",
+        "name" : "The Hall of Heroes",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dnd.hall_of_heroes"
+        },
+        "tags" : "Element,Container,#file,#hall",
+        "technology" : "JSON"
+      }, {
+        "description" : "A master of heroic tales and legendary statistics",
+        "documentation" : { },
+        "group" : "adventure",
+        "id" : "7",
+        "name" : "The Chronicler",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dnd.character_chronicler"
+        },
+        "relationships" : [ {
+          "description" : "records in",
+          "destinationId" : "6",
+          "id" : "8",
+          "sourceId" : "7",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container,#agent,#strands,#chronicler",
+        "technology" : "Strands Agents"
+      }, {
+        "description" : "Coordinates all adventures",
+        "documentation" : { },
+        "id" : "9",
+        "name" : "The Orchestrator",
+        "properties" : {
+          "structurizr.dsl.identifier" : "dnd.game_master"
+        },
+        "relationships" : [ {
+          "description" : "tempts fate",
+          "destinationId" : "2",
+          "id" : "10",
+          "sourceId" : "9",
+          "tags" : "Relationship",
+          "technology" : "mcp"
+        }, {
+          "description" : "queries for ancient rule wisdom",
+          "destinationId" : "4",
+          "id" : "11",
+          "sourceId" : "9",
+          "tags" : "Relationship",
+          "technology" : "a2a"
+        }, {
+          "description" : "tracks heroic destinies",
+          "destinationId" : "7",
+          "id" : "12",
+          "sourceId" : "9",
+          "tags" : "Relationship",
+          "technology" : "a2a"
+        } ],
+        "tags" : "Element,Container,#agent,#strands,#master",
+        "technology" : "Strands Agents"
+      } ],
+      "description" : "A role-playing game where players embark on adventures in a fantasy world",
+      "documentation" : { },
+      "id" : "1",
+      "name" : "DnD",
+      "properties" : {
+        "structurizr.dsl.identifier" : "dnd"
+      },
+      "tags" : "Element,Software System,#dnd"
+    } ]
+  },
+  "name" : "DnD",
+  "properties" : {
+    "structurizr.inspection.info" : "0",
+    "structurizr.inspection.ignore" : "0",
+    "structurizr.inspection.error" : "13",
+    "structurizr.inspection.warning" : "0"
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "C4_D",
+      "metadataSymbols" : "SquareBrackets",
+      "properties" : {
+        "structurizr.sort" : "created"
+      },
+      "styles" : {
+        "elements" : [ {
+          "shape" : "Robot",
+          "tag" : "#agent"
+        }, {
+          "icon" : "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAzQjU3IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+U1FMaXRlPC90aXRsZT48cGF0aCBkPSJNMjEuNjc4LjUyMWMtMS4wMzItLjkyLTIuMjgtLjU1LTMuNTEzLjU0NGE4LjcxIDguNzEgMCAwIDAtLjU0Ny41MzVjLTIuMTA5IDIuMjM3LTQuMDY2IDYuMzgtNC42NzQgOS41NDQuMjM3LjQ4LjQyMiAxLjA5My41NDQgMS41NjFhMTMuMDQ0IDEzLjA0NCAwIDAgMSAuMTY0LjcwM3MtLjAxOS0uMDcxLS4wOTYtLjI5NmwtLjA1LS4xNDZhMS42ODkgMS42ODkgMCAwIDAtLjAzMy0uMDhjLS4xMzgtLjMyLS41MTgtLjk5NS0uNjg2LTEuMjg5LS4xNDMuNDIzLS4yNy44MTgtLjM3NiAxLjE3Ni40ODQuODg0Ljc3OCAyLjQuNzc4IDIuNHMtLjAyNS0uMDk5LS4xNDctLjQ0MmMtLjEwNy0uMzAzLS42NDQtMS4yNDQtLjc3Mi0xLjQ2NC0uMjE3LjgwNC0uMzA0IDEuMzQ2LS4yMjYgMS40NzguMTUyLjI1Ni4yOTYuNjk4LjQyMiAxLjE4Ni4yODYgMS4xLjQ4NSAyLjQ0LjQ4NSAyLjQ0bC4wMTcuMjI0YTIyLjQxIDIyLjQxIDAgMCAwIC4wNTYgMi43NDhjLjA5NSAxLjE0Ni4yNzMgMi4xMy41IDIuNjU3bC4xNTUtLjA4NGMtLjMzNC0xLjAzOC0uNDctMi4zOTktLjQxLTMuOTY3LjA5LTIuMzk4LjY0Mi01LjI5IDEuNjYxLTguMzA0IDEuNzIzLTQuNTUgNC4xMTMtOC4yMDEgNi4zLTkuOTQ1LTEuOTkzIDEuOC00LjY5MiA3LjYzLTUuNSA5Ljc4OC0uOTA0IDIuNDE2LTEuNTQ1IDQuNjg0LTEuOTMxIDYuODU3LjY2Ni0yLjAzNyAyLjgyMS0yLjkxMiAyLjgyMS0yLjkxMnMxLjA1Ny0xLjMwNCAyLjI5Mi0zLjE2NmMtLjc0LjE2OS0xLjk1NS40NTgtMi4zNjIuNjI5LS42LjI1MS0uNzYyLjMzNy0uNzYyLjMzN3MxLjk0NS0xLjE4NCAzLjYxMy0xLjcyQzIxLjY5NSA3LjkgMjQuMTk1IDIuNzY3IDIxLjY3OC41MjFtLTE4LjU3My41NDNBMS44NDIgMS44NDIgMCAwIDAgMS4yNyAyLjl2MTYuNjA4YTEuODQgMS44NCAwIDAgMCAxLjgzNSAxLjgzNGg5LjQxOGEyMi45NTMgMjIuOTUzIDAgMCAxLS4wNTItMi43MDdjLS4wMDYtLjA2Mi0uMDExLS4xNDEtLjAxNi0uMmEyNy4wMSAyNy4wMSAwIDAgMC0uNDczLTIuMzc4Yy0uMTIxLS40Ny0uMjc1LS44OTgtLjM2OS0xLjA1Ny0uMTE2LS4xOTctLjA5OC0uMzEtLjA5Ny0uNDMyIDAtLjEyLjAxNS0uMjQ1LjAzNy0uMzg2YTkuOTggOS45OCAwIDAgMSAuMjM0LTEuMDQ1bC4yMTctLjAyOGMtLjAxNy0uMDM1LS4wMTQtLjA2NS0uMDMxLS4wOTdsLS4wNDEtLjM4MWEzMi44IDMyLjggMCAwIDEgLjM4Mi0xLjE5NGwuMi0uMDE5Yy0uMDA4LS4wMTYtLjAxLS4wMzgtLjAxOC0uMDUzbC0uMDQzLS4zMTZjLjYzLTMuMjggMi41ODctNy40NDMgNC44LTkuNzkxLjA2Ni0uMDY5LjEzMy0uMTI4LjE5OC0uMTk0WiIvPjwvc3ZnPg==",
+          "stroke" : "#003b57",
+          "tag" : "#chamber"
+        }, {
+          "icon" : "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRUQxQzI0IiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+RHVuZ2VvbnMgJmFtcDsgRHJhZ29uczwvdGl0bGU+PHBhdGggZD0iTTMuOTIxIDIuMjE3QzQuODU5IDEuMjk3IDYuMTIyLjc0MiA3Ljk4OC44MzhjMi45NDQuMTUyIDQuMzU4IDIuMDk2IDQuMzU4IDQuMTkzIDAgMS4wMTEtLjUzNiAyLjM2My0xLjI3NiAzLjMyMy0uMDQ1LS4wNDQtLjA4My0uMDg3LS4xMy0uMTMxYTIxLjI4IDIxLjI4IDAgMDAtLjQ5LS40MzZjLS40ODQtLjQyMS0xLjAzLS45MDUtMS4zOTctMS40MjYuODA3LTEuNDEzLjM0Ni0zLjQxNC0xLjM1OS0zLjQxNC0uOTk4IDAtMS44My44OC0xLjc1OSAyLjA0Ny0uMjYuNTUyLS4zODcgMS4zNTItLjMzNyAyLjA2Mi0uNDg5LS4yOTUtLjkwMS0uNjE4LTEuMDk1LTEuMDY3bC0uNjI2LTEuNDQ1LS40OTMgMS40OTJhMi41MTUgMi41MTUgMCAwMC0uMDg4IDEuMTM1bC0uMDEtLjAwMWEzLjI3IDMuMjcgMCAwMS0uNTU1LTEuNTdjLS4xOC0xLjkwOC43NjQtMi45NjQgMS4xOS0zLjM4M3ptLS40NSA2LjgyNGMuMTE0LS40MzQtLjc3OC0xLjE3My0xLjExLTEuMzExIDEuMjI0LS4wNDcgMS44MzMuMTc1IDEuODMzLjE3NS0uMzItLjQ1NC0uNDIzLTEuMTQ2LS4yNDItMS42OTUuNjY3IDEuNTM5IDMuMDUyIDEuNzg2IDMuNjQyIDMuMDYyLS4wODQtLjU1LS42MjUtMS4xNjktMS4yNTMtMS41My0uMzM3LS44MzgtLjA4NS0yLjM4My4zMjctMi44MDgtLjE0NSAyLjIyIDMuMTQ5IDMuNDkgMy44MzIgNS4xMDUtLjQtMS4zODMtMS45MzYtMi4yNTgtMi42NjQtMy4wODYtLjI0LS41NS0uMDU2LTEuNDguMjA1LTEuNzk5LS4wNzcgMS40ODggMS41OTIgMi42NDggMi40ODMgMy40OCAxLjA1MS45NzkgMS4zNDkgMS44NDUgMS4yMDcgMi41NTMuMjMuMDU4LjU0Ny4yNzMuNDkzLjYzOC4zMzYtLjA3NS42NzctLjQ0NS43Ni0uNjczLjE2NSAxLjEwNC0uNTEgMi4yNzMtMS4yNjYgMi42MjEgMCAwIC4yMDMtLjUyNy0uMTQxLS45My0uMzQtLjM5OC0xLjMwNS0uNDAzLTEuNjMxLS4zOCAwIDAgLjQtLjU3LjI0Mi0uODYtLjItLjM1Ny0yLjA4Ny0uMi0yLjkzLjA5NC4yODctLjAzLjk2Ny4wNDQgMS4yMDUuMTQtLjEzMi4xODktLjQ3OC45ODktLjIzIDEuMjI5LjIzLjIyLjUzLS4xNjIuNTMtLjE2MnMtLjI5NC44NzUtLjA4MiAxLjA3OGMuMjEuMjAzLjY2Mi4wNTkuNjYyLjA1OS0uMjgxLjY4Ny0xLjM3OSAxLjE2LTIuMTQ2IDEuMTYuMjc0LS4wODQuNzI1LS41NTMuNzk1LS44MzYtLjIuMDk3LS43MjYuMTUzLS45MjguMTE3LjI0OC0uMDk3Ljc0Ni0uNzEyLjU5Mi0xLjQwNS0uMjI5LTEuMDA5LTEuNjktMS4xMzctMi40MjUtLjY0OS4yMzgtLjY3OC45NS0xLjMxMiAxLjUwNy0xLjUyYTcuNTIzIDcuNTIzIDAgMDAtMS4xMTctLjI3M2MuNDY4LS4zNjkgMS42NDItLjY3IDIuMjQxLS42MzktLjkxNC0uMjI1LTIuNTg2LjA1Ny0zLjM1Mi45MjcuMjQ1IDAgLjg3NS4xMTQgMS4xMTguMTktMS4wNDguMTgyLTIuNDc4IDEuMTIyLTIuODk4IDEuNTY2LjExLS41ODQuMjgtMS4wOC4xMzYtMS40My0uMjAyLS40OTctLjgyNi0uNzA0LTIuMDctLjQ1Ny44NC0uODA5IDIuNTYtMS4zMSAyLjY3Ni0xLjc1MXptNS43MjQuNzgzYy4xNjYuNTYzLjM5IDEuMDggMS4wOTcgMS4wOCAwIDAtLjI0OC0uNzc5LTEuMDk3LTEuMDh6bTEwLjQ3OSA2LjIwM2MuNTMzLjA4OCAxLjI4Mi42MzUgMS4yODIgMS40MTcgMCAxLjI3NS0xLjY1MiAxLjY2Ny0yLjU2NiAxLjQ2OS45Ny0uNjQ4Ljg0LTIuNTEyLS4zMjYtMy4xNzguMzk1IDEuMDQ1LS43OSAyLjA4Mi0xLjk0MiAxLjE3Mi0uNjQxLS41MDYtMi4xMjMtMS42OTQtMi43ODUtMi4yMDYtLjY2LS41MTEtMS40MzQtLjIxNC0xLjc0LS40MzctLjM0OC0uMjU0LS4xMjUtLjk3LS42LTEuMjM2LS4zOTktLjIyMi0uNzktLjA5OC0xLjI1My0uMjQ2LS40Mi0uMTMzLS43MzMtLjQ0OC0uNjgtLjg3Mi0uMTc4LjMwMy0uMTkuODMuMTI5IDEuMTg2LjMxNi4zNTIuODQ0LjU3IDEuMDYyLjk1Ny4yODIuNS0uMTkzIDEuMTk2IDEuMDYyIDIuMTQzLjYuNDUyIDEuNTMgMS4xOTUgMi4xMzcgMS43MDcgMS4wMjEuODYyLjQ3NiAxLjk0LjYxIDIuODc5LjE1NSAxLjA5NiAxLjA3MiAxLjcwNCAxLjY4MiAxLjg1OC0uNTI2LS40Ni0uNzI1LTEuNjIuMDE0LTIuMzMuMDM4LjkxNi43MjUgMi4zNSAyLjI5MiAyLjc1MyAxLjY2Ny40MjcgMy40MzktLjQ4MiAzLjgwNy0xLjEyMi0uNjQzLjI4LTEuODU0LS4wMjItMi4zNTMtLjQ3MiAxLjk1Ni4yNjcgMy42ODYtMS4wMzggMy42ODYtMi43MTIgMC0xLjYzMy0xLjY0NS0yLjg5OC0zLjUxOC0yLjczem0tOC41Ljc5M2MtLjY2NyAxLjEtMi4wODggMi41MzEtMy41MjkgMi41MzEtMi42NTEgMC0zLjk4LTMuNjEtMS4wMDctNi41NjRhMS40MzUgMS40MzUgMCAwMC0uNC0uMDZjLS4yNTUgMC0uNTA0LjA2NC0uNjY4LjE3NGwtMS4xNjguNzc2LjI2NC0xLjQzMmEyLjE0IDIuMTQgMCAwMS4wOTMtLjIyNWMtLjY3NS4zMjItMS4zMzkuNzgyLTEuNTg4IDEuMDQ1TDIuMDIgMTQuMjhsLjEyMi0xLjcwM2MuMDI1LS4xMzMuMDU0LS4yNjIuMDgtLjM4NS4wNi0uMjc1LjEzNS0uNjE4LjA4OS0uNzMyYS4yMTQuMjE0IDAgMDAtLjA4My0uMDkxQzEuNjggMTEuNzc1LjE3NyAxMy4wNTUgMCAxNC45MzZjMCAwIC4yOTEtLjM5NS41NDQtLjQ4Ny4xNjctLjA2Mi4zMTMuMDE3LjE1My40ODctLjA2MS4xODQtMS41MSAzLjk2IDEuMzQgNi41NyAwIDAtLjMxMi0uNzY4LS4xMjQtMSAuMDkyLS4xMTQuMjEyLS4xMjMuMzc2LjA4LjEyMy4xNTYuMjUxLjMwNi40MzguNTEuMTg3LjIwNS40NDcuNDQ3LjcyOS42NTcuODUzLjU3NSAyLjAxMSAxLjAzNyAzLjMyOSAxLjAzNyAzLjUyNiAwIDUuMzk1LTIuMzQgNi40My00LjMwNWExLjU1MSAxLjU1MSAwIDAwLS4xNTUtLjE1IDU3LjAwMSA1Ny4wMDEgMCAwMC0xLjg4Ny0xLjUxNXptMS45MS0yLjg4NGMuMjA4LjA2Ny40Mi4xNTguNjI3LjMxOS4yNDQuMTg4LjYwMy40NzEuOTg3Ljc3Ni4zMDYtLjY1IDEuMDA5LTIuMDAzIDIuMDk3LTMuMjA0Ljk4LTEuMDggMi42OS0xLjE4NCAzLjU4OC0uNTI2LjU3Ny0uNTAyIDIuNTY5LS45NzQgMy42MTctLjY4Ny0uNjM5LS42NjgtMS45OTYtMS41NjQtMy40OTYtMS41NjQtMS4yMzcgMC0xLjkzNi41ODMtMi4xMTMuMzItLjIyOC0uMzM2LjgzNy0uODMzLjgzNy0uODMzLTEuNDYuMDU4LTIuNTIzIDEuNzExLTIuOTY2IDEuNTA1LS4yNjItLjEyLjM5NS0uOTIuMzk1LS45Mi0xLjMzNi43NDYtMi40NTUgMi4zMjgtMi42ODggMy4yOTEgMS4yMjktMS40NDggMy42MTQtMi40ODYgNS4xNjYtMi4yNjctMi42MjkuMTIyLTQuODkxIDIuMjc2LTYuMDUgMy43OVoiLz48L3N2Zz4=",
+          "stroke" : "#ed1c24",
+          "tag" : "#dnd"
+        }, {
+          "icon" : "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDAwMDAwIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8dGl0bGU+SlNPTjwvdGl0bGU+DQogICAgPHBhdGggZmlsbD0iI2ZmMTQ5MyIgZD0iTTEyLjA0MyAyMy45NjhjLjQ3OS0uMDA0Ljk1My0uMDI5IDEuNDI2LS4wOTRhMTEuODA1IDExLjgwNSAwIDAwMy4xNDYtLjg2MyAxMi40MDQgMTIuNDA0IDAgMDAzLjc5My0yLjU0MiAxMS45NzcgMTEuOTc3IDAgMDAyLjQ0LTMuNDI3IDExLjc5NCAxMS43OTQgMCAwMDEuMDItMy40NzZjLjE0OS0xLjE2LjEzNS0yLjM0Ni0uMDQ1LTMuNDk5YTExLjk2IDExLjk2IDAgMDAtLjc5My0yLjc4OCAxMS4xOTcgMTEuMTk3IDAgMDAtLjg1NC0xLjYxN2MtMS4xNjgtMS44MzctMi44NjEtMy4zMTQtNC44MS00LjNhMTIuODM1IDEyLjgzNSAwIDAwLTIuMTcyLS44N2gtLjAwNWMuMTE5LjA2My4yNC4xMzIuMzQ1LjIwMS4xMi4wNzQuMjM5LjE0Ni4zNTEuMjI1YTguOTMgOC45MyAwIDAxMS41NTkgMS4zM2MxLjA2MyAxLjE0NSAxLjc5NyAyLjU0OCAyLjIxOCA0LjA0MS4yODQuOTgyLjQzNCAxLjk5OC40OTUgMy4wMTcuMDQ0Ljc0My4wNDQgMS40OTEtLjA0NyAyLjIyOS0uMTQ5IDEuMjctLjU1NCAyLjUxLTEuMjI4IDMuNTk2YTcuNDc1IDcuNDc1IDAgMDEtMS45MDMgMi4wODRjLTEuMjQ0LjkyOC0yLjg3NyAxLjQ4Mi00LjQzNiAxLjExNGEzLjkxNiAzLjkxNiAwIDAxLS43NDgtLjI1OCA0LjY5MiA0LjY5MiAwIDAxLS43NzktLjQ1IDYuMDggNi4wOCAwIDAxLTEuMjQ0LTEuMTA1IDYuNTA3IDYuNTA3IDAgMDEtMS4wNDktMS43NDcgNy4zNjYgNy4zNjYgMCAwMS0uNDk0LTIuNTRjLS4wMy0xLjI3My4yMjUtMi41NTMuODU0LTMuNjdhNi40MyA2LjQzIDAgMDExLjY2My0xLjkxOGMuMjI1LS4xNzguNDY0LS4zMzMuNzA0LS40NzlsLjAxNi0uMDA3YTUuMTIxIDUuMTIxIDAgMDAtMS40NDEtLjEyIDQuOTYzIDQuOTYzIDAgMDAtMS4yMjguMjRjLS4zNTkuMTItLjcwNC4yNy0xLjAxOS40NWE2LjE0NiA2LjE0NiAwIDAwLS43MzMuNDk0Yy0uMjExLjE4LS40Mi4zNi0uNjE1LjU1NS0xLjEyMyAxLjE1My0xLjc2OCAyLjY4Mi0yLjAyMiA0LjI1Ni0uMTUuOTczLS4xNSAxLjk2LS4wOTEgMi45NS4xMDUgMS4zOTUuMzkxIDIuNzg3Ljk0NSA0LjA2MmE4LjUxOCA4LjUxOCAwIDAwMS4zNDggMi4xNzMgOC4xNCA4LjE0IDAgMDAzLjEzMiAyLjIzIDcuOTM0IDcuOTM0IDAgMDAyLjExMy41NGMuMDc0LjAxNS4xNDkuMDE1LjIwOS4wMTV6bS0yLjkzNC0uMzk4YTQuMTAyIDQuMTAyIDAgMDEtLjQ1LS4yMjggOC41IDguNSAwIDAxLTIuMDM4LTEuNTM0Yy0xLjA5NC0xLjEzNy0xLjgyNy0yLjU2Ni0yLjI0Ny00LjA4YTE1LjE4NCAxNS4xODQgMCAwMS0uNDk1LTMuMTcyIDEyLjE0IDEyLjE0IDAgMDEuMDQ2LTIuMDgyYy4xMzUtMS4yNTcuNDk1LTIuNTAxIDEuMTI0LTMuNThhNi44ODkgNi44ODkgMCAwMTEuNzgzLTIuMDUzIDYuMjMgNi4yMyAwIDAxMS42MzMtLjkgNS4zNjMgNS4zNjMgMCAwMTMuNTIyLS4wNDVjLjAyOSAwIC4wMjkgMCAuMDQ1LjAzLjAxNS4wMTUuMDQ1LjAxNS4wNi4wMy4wNDUuMDE2LjEwNC4wNDUuMTY1LjA3NC4yMzkuMTIuNDc5LjI3MS43MDQuNDJhNi4yOTQgNi4yOTQgMCAwMTIuMDk3IDIuNTAyYy40Mi45MTQuNjE1IDEuOTM0LjYzMSAyLjkzOC4wMTQgMS4wNzktLjE4IDIuMTU3LS42NDUgMy4xNDZhNi40MiA2LjQyIDAgMDEtMi42MzggMi44MzJjLjA5LjAzLjE4LjA0NS4yNzEuMDc1LjIyNS4wNDQuNDQ5LjA3NC42ODguMDc0IDEuNDY4LjA0NSAyLjg5Mi0uNjYgMy45NC0xLjY0Ny4xOTUtLjE4LjM3NS0uMzc1LjU0LS41ODUuMjI1LS4yNy40MzUtLjU0LjYxNC0uODIzLjIzOS0uMzc1LjQzNS0uNzUuNjE0LTEuMTU0YTguMTEyIDguMTEyIDAgMDAuNTA5LTEuNjY0Yy4xOTYtMS4wMDQuMjExLTIuMDIyLjE0OS0zLjAyNi0uMTM1LTIuMDIyLS42NzMtNC4wNDUtMS44NDItNS43MjRhOS4wNTQgOS4wNTQgMCAwMC0uNTU1LS43MTkgOS44NjggOS44NjggMCAwMC0xLjA2My0xLjAzNCA4LjQ3NyA4LjQ3NyAwIDAwLTEuMzYzLS45MTUgOS45MjcgOS45MjcgMCAwMC0xLjY5Mi0uNTk4bC0uMy0uMDZjLS4yMDktLjAzLS40Mi0uMDQ0LS42MzQtLjA2YTguNDUzIDguNDUzIDAgMDAtMS4wMTUuMDE2Yy0uNzA0LjA0NS0xLjQxMi4xNi0yLjExMi4zMzdDNS43OTkgMS4yMjcgMi44NjMgMy41NjYgMS4zIDYuNjdBMTEuODM0IDExLjgzNCAwIDAwLjIzOCA5LjgwMWExMS44MSAxMS44MSAwIDAwLS4xMDQgMy43NzVjLjEyIDEuMDIuMzc0IDIuMDIzLjc3OCAyLjk3Ny4yMjcuNTcuNTExIDEuMTI0LjgyNSAxLjY0OCAxLjA5NCAxLjc4MyAyLjY4MyAzLjIzNiA0LjUxIDQuMjQuNjg4LjM5IDEuNDA4LjY5IDIuMTU3Ljk0NC4yMjYuMDc0LjQ1LjE1LjY4OS4yMXoiLz4NCjwvc3ZnPg==",
+          "stroke" : "#ff1493",
+          "tag" : "#hall"
+        }, {
+          "icon" : "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmlld0JveD0iMCAwIDM2LjQ1MDI5NSA1OC4yMDg1MzgiCiAgIGZpbGw9Im5vbmUiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzQiCiAgIHNvZGlwb2RpOmRvY25hbWU9InN0cmFuZHMuc3ZnIgogICB3aWR0aD0iMzYuNDUwMjk0IgogICBoZWlnaHQ9IjU4LjIwODUzOCIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4zLjIgKDA5MWUyMGUsIDIwMjMtMTEtMjUsIGN1c3RvbSkiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXc0IgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgICBib3JkZXJvcGFjaXR5PSIwLjI1IgogICAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgICAgaW5rc2NhcGU6em9vbT0iNy4yMDg5NTUyIgogICAgIGlua3NjYXBlOmN4PSIxMDAuNSIKICAgICBpbmtzY2FwZTpjeT0iMjkuMzM4NTA5IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMjg4MCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxNzExIgogICAgIGlua3NjYXBlOndpbmRvdy14PSItOSIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iLTkiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmc0IiAvPgogIDxwYXRoCiAgICAgZD0ibSAxMi4yNDY3Miw2LjYzODAxMzIgYyAtMS41Mzg3LC0wLjQ1NTkyIC0zLjE1NTU5MDMsMC40MjE3OSAtMy42MTE1MTAzLDEuOTYwNDkgLTAuNDU1OTIsMS41Mzg2Njk4IDAuNDIxODEsMy4xNTU1Njk4IDEuOTYwNTEwMywzLjYxMTU2OTggbCAxOS4wMDE5LDUuMzc4NSBjIDEuMjcyMiwwLjM3NyAxLjQxNSwyLjEyMTYgMC4yMjEyLDIuNzAwNSBsIC0yNS43MjI2MjAzLDEyLjQ3MTIgYyAtNS45Nzg0NSwyLjg5ODYgLTUuMjUwNDUsMTEuNjM4MyAxLjEyNTE0LDEzLjUwNzggbCAxOC42Mzk5ODAzLDUuNDY1OSAwLjA3MjMsMC4wMjAxIGMgMS41MTc5LDAuNDAzNyAzLjA4OTMsLTAuNDc0OSAzLjUzMzksLTEuOTkwOCAwLjQ1MTUsLTEuNTQgLTAuNDMwOSwtMy4xNTQ2IC0xLjk3MDksLTMuNjA2MiBsIC0xOC42Mzk5NjAzLC01LjQ2NTggYyAtMS4yNzUxMywtMC4zNzM5IC0xLjQyMDc3LC0yLjEyMTkgLTAuMjI1MSwtMi43MDE2IEwgMzIuMzU0MTIsMjUuNTE4NDczIGMgNS45Njk0LC0yLjg5NDIgNS4yNTUyLC0xMS42MTc0IC0xLjEwNTQsLTEzLjUwMiB6IgogICAgIGZpbGw9IiM5ODk4OTgiCiAgICAgaWQ9InBhdGgxIiAvPgogIDxwYXRoCiAgICAgZD0ibSAzMi42MjI5MiwwLjExNjE0NjE5IGMgMS41NDExLC0wLjQ0Nzc2MSAzLjE1MzUsMC40Mzg1ODMgMy42MDEzLDEuOTc5Njc3MDEgMC40NDc3LDEuNTQxMSAtMC40Mzg2LDMuMTUzNDYgLTEuOTc5NywzLjYwMTIyIEwgOC45NTkwNjk3LDEzLjA0MzU3MyBjIC0zLjgzNDM4LDEuMTE0MSAtNC4yNzcwNyw2LjM2ODggLTAuNjgzMTcsOC4xMDg4IGwgMjIuMTA1NjIwMywxMC43MDE3IGMgOC4zNzUzLDQuMDU0NyA3LjM1ODQsMTYuMjk2NyAtMS41NzExLDE4LjkxMzkgbCAtMjQuOTgzNjUwMyw3LjMyMjUgYyAtMS41NDAwNSwwLjQ1MTQgLTMuMTU0Mzk4MDIsLTAuNDMxMiAtMy42MDU3NzkwMiwtMS45NzEyIC0wLjQ1MTM2NCwtMS41NCAwLjQzMTE0OSwtMy4xNTQ0IDEuOTcxMTg5MDIsLTMuNjA1OCBsIDI0Ljk4MzY0MDMsLTcuMzIyNSBjIDMuODI2OSwtMS4xMjE3IDQuMjYyNywtNi4zNjgzIDAuNjczMywtOC4xMDYgTCA1Ljc0MzQ5OTcsMjYuMzgzMjczIGMgLTguMzg1ODQsLTQuMDU5OCAtNy4zNTI3NywtMTYuMzIxIDEuNTk0MTQsLTE4LjkyMDQ2OTggeiIKICAgICBmaWxsPSIjMDBmZjc3IgogICAgIGlkPSJwYXRoMiIgLz4KPC9zdmc+Cg==",
+          "stroke" : "#00ff77",
+          "tag" : "#strands"
+        }, {
+          "stroke" : "#834187",
+          "tag" : "Person"
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://raw.githubusercontent.com/rvr06/cornifer-contrib/main/themes/topology/theme.json", "https://raw.githubusercontent.com/rvr06/cornifer-contrib/main/themes/heraldry2/theme.json" ]
+    },
+    "containerViews" : [ {
+      "dimensions" : {
+        "height" : 2069,
+        "width" : 3108
+      },
+      "elements" : [ {
+        "id" : "2",
+        "x" : 1688,
+        "y" : 1429
+      }, {
+        "id" : "3",
+        "x" : 2438,
+        "y" : 829
+      }, {
+        "id" : "4",
+        "x" : 1713,
+        "y" : 779
+      }, {
+        "id" : "6",
+        "x" : 2438,
+        "y" : 229
+      }, {
+        "id" : "7",
+        "x" : 1713,
+        "y" : 179
+      }, {
+        "id" : "9",
+        "x" : 938,
+        "y" : 779
+      }, {
+        "id" : "13",
+        "x" : 200,
+        "y" : 779
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "key" : "C4_2",
+      "name" : "Container View: DnD",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "10"
+      }, {
+        "id" : "11"
+      }, {
+        "id" : "12"
+      }, {
+        "id" : "15"
+      }, {
+        "id" : "5"
+      }, {
+        "id" : "8"
+      } ],
+      "softwareSystemId" : "1"
+    } ],
+    "deploymentViews" : [ {
+      "dimensions" : {
+        "height" : 2578,
+        "width" : 1801
+      },
+      "elements" : [ {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "18",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "19",
+        "x" : 260,
+        "y" : 905
+      }, {
+        "id" : "20",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 1091,
+        "y" : 1591
+      }, {
+        "id" : "23",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "24",
+        "x" : 1091,
+        "y" : 220
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "27",
+        "x" : 1091,
+        "y" : 905
+      } ],
+      "environment" : "local",
+      "key" : "C4_D",
+      "name" : "Deployment View: local",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "22"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "28"
+      } ]
+    } ],
+    "systemLandscapeViews" : [ {
+      "dimensions" : {
+        "height" : 800,
+        "width" : 1600
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 950,
+        "y" : 209
+      }, {
+        "id" : "13",
+        "x" : 200,
+        "y" : 159
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "key" : "C4_L",
+      "name" : "System Landscape View",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "14"
+      } ]
+    } ]
+  }
+}

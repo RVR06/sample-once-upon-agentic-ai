@@ -7,6 +7,12 @@ from strands import Agent, tool
 from strands.multiagent.a2a import A2AServer
 from tinydb import TinyDB, Query
 
+from strands.telemetry import StrandsTelemetry
+
+strands_telemetry = StrandsTelemetry()
+strands_telemetry.setup_otlp_exporter()
+strands_telemetry.setup_meter(enable_otlp_exporter=True)
+
 @dataclass
 class Stats:
     strength: int
@@ -155,6 +161,8 @@ agent = Agent(
     # - model: optional
     # - tools: List the tools
     # - name: "Character Creator Agent"
+    name= "Character Creator Agent",
+    tools=[create_character, find_character_by_name, list_all_characters],
     description= DESCRIPTION,
     system_prompt= SYSTEM_PROMPT
 )
@@ -162,8 +170,11 @@ agent = Agent(
 # TODO: Create an A2AServer instance with:
 # - agent: The agent instance created above
 # - port: 8001 (Character Agent port)
-a2a_server = None
+a2a_server = A2AServer(
+        agent=agent,
+        port=8001,
+        enable_a2a_compliant_streaming=True
+    )
 
 if __name__ == "__main__":
-    # TODO: Start the A2A server
-    pass
+    a2a_server.serve()

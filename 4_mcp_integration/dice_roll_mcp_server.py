@@ -1,14 +1,22 @@
 # TODO: Import FastMCP from mcp.server
+from mcp.server import FastMCP 
+
 import random
 import logging
+
+from strands.telemetry import StrandsTelemetry
+
+strands_telemetry = StrandsTelemetry()
+strands_telemetry.setup_otlp_exporter()
+strands_telemetry.setup_meter(enable_otlp_exporter=True)
 
 # Configure logging to show dice roll results
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # TODO: Create an MCP server with name "D&D Dice Roll Service" on port 8080
 mcp = FastMCP(
-    # name=
-    # port=
+    name="D&D Dice Roll Service",
+    port=8080
 )
 
 @mcp.tool()
@@ -47,3 +55,5 @@ def roll_dice(faces: int = 6, count: int = 1) -> dict:
 if __name__ == "__main__":
     print("Starting D&D Dice Roll MCP Server...")
     # TODO: run the MCP server
+    mcp.run(transport="streamable-http")
+

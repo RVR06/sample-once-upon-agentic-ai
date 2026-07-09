@@ -3,6 +3,11 @@ import chromadb
 from strands import Agent, tool
 from strands.multiagent.a2a import A2AServer
 
+from strands.telemetry import StrandsTelemetry
+
+strands_telemetry = StrandsTelemetry()
+strands_telemetry.setup_otlp_exporter()
+strands_telemetry.setup_meter(enable_otlp_exporter=True)
 
 class RulesKnowledgeBase:
     """Fast knowledge base interface"""
@@ -78,6 +83,8 @@ agent = Agent(
     # - model: Optional
     # - tools: List containing the query_dnd_rules tool
     # - name: "Rules Agent"
+    tools=[query_dnd_rules],
+    name= "Rules Agent",
     description= DESCRIPTION,
     system_prompt= SYSTEM_PROMPT
 )
@@ -89,4 +96,8 @@ a2a_server = None
 
 if __name__ == "__main__":
     # TODO: Start the A2A server
-    pass
+    a2a_server = A2AServer(
+        agent=agent,
+        port=8000
+    )
+    a2a_server.serve()

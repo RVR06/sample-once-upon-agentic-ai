@@ -212,3 +212,8 @@ output/
 # ChromaDB knowledge base (generated files)
 dnd_knowledge_base/
 **/dnd_knowledge_base/
+
+# structurizr
+**/.structurizr/
+
+**/characters.json

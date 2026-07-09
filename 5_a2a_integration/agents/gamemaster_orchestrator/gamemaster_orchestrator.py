@@ -12,6 +12,12 @@ from strands.tools.mcp.mcp_client import MCPClient
 from mcp.client.streamable_http import streamablehttp_client
 from strands_tools.a2a_client import A2AClientToolProvider
 
+from strands.telemetry import StrandsTelemetry
+
+strands_telemetry = StrandsTelemetry()
+strands_telemetry.setup_otlp_exporter()
+strands_telemetry.setup_meter(enable_otlp_exporter=True)
+
 app = FastAPI(title="D&D Game Master API")
 origins = ["*"]
 app.add_middleware(
@@ -47,7 +53,8 @@ def get_user(user_name):
 
 # TODO: Create MCP Client for dice rolling service
 # Initialize MCPClient with a lambda that returns streamablehttp_client("http://localhost:8080/mcp")
-mcp_client = None
+def create_streamable_http_transport():
+   return streamablehttp_client("http://localhost:8080/mcp/")
 
 # System prompt for the agent
 SYSTEM_PROMPT = """You are a D&D Game Master orchestrator with access to specialized agents and tools.
@@ -89,12 +96,18 @@ class StoryOutput(BaseModel):
 
 try:
     # TODO: Create the A2A client with the A2AClientToolProvider and pass the list of the known agent urls
-    A2A_AGENT_URLS = []
+    A2A_AGENT_URLS = [
+        'http://localhost:8000',  # Rules Agent
+        'http://localhost:8001',   # Character Agent
+
+    ]
 
     a2a_client = A2AClientToolProvider(known_agent_urls=A2A_AGENT_URLS)
 
     agent = Agent(
         system_prompt=SYSTEM_PROMPT,
+        tools=[MCPClient(create_streamable_http_transport)] + a2a_client.tools,
+        structured_output_model=StoryOutput
         #TODO: Create the gamemaster agent with both A2A and MCP tools
         #TODO: Force the response to use the StoryOutput model
     )
